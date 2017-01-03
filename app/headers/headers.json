@@ -1,0 +1,27 @@
+[
+    {
+        "order" : 1,
+        "id" : "new-job",
+        "name": "New Job"
+    },
+    {
+        "order" : 2,
+        "id" : "all-jobs",
+        "name": "All Jobs"
+    },
+    {
+        "order" : 3,
+        "id" : "artists",
+        "name": "Artists"
+    },
+    {
+        "order" : 4,
+        "id" : "register",
+        "name": "Register"
+    },
+    {
+        "order" : 5,
+        "id" : "login",
+        "name": "Login"
+    }
+]
