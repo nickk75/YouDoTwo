@@ -9,7 +9,7 @@ angular.
       var self = this;
       self.orderProp = 'order';
 
-    $http.get('headers/headers.json').then(function(response) {
+    $http.get('youdotwo-header/headers/headers.json').then(function(response) {
     self.headers = response.data;
     });
 }});
