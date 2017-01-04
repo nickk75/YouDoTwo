@@ -6,10 +6,13 @@ angular.
     function config($locationProvider, $routeProvider) {
       $locationProvider.hashPrefix('!');
 
-    $routeProvider.
+      $routeProvider.
         when('/', {
-          template: '<youdotwo-header></youdotwo-header>'
-        }).
-        otherwise('/');
+        template: '<youdotwo-header></youdotwo-header>'
+      }).
+        when('/slider', {
+        template: '<youdotwo-carousel></youdotwo-carousel>'
+      }).
+        otherwise('/slider');
     }
   ]);
