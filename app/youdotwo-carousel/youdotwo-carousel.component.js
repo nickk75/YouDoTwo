@@ -5,36 +5,36 @@ angular.
   module('youdotwoCarousel').
   component('youdotwoCarousel', {
     templateUrl: 'youdotwo-carousel/youdotwo-carousel.template.html',
-    controller: ['$http' , function YoudotwoCarouselController($http) {
+    controller:( 'youdotwoCarousel', [ '$scope', '$http' , function YoudotwoCarouselController($scope, $http) {
       var self = this;
       self.orderProp = 'id';
 
       $http.get('youdotwo-carousel/images/images.json').then(function(response) {
         self.slides = response.data;
 
-        self.direction = 'left';
-        self.currentIndex = 0;
+        $scope.direction = 'left';
+        $scope.currentIndex = 0;
 
-        self.setCurrentSlideIndex = function (index) {
-            self.direction = (index > self.currentIndex) ? 'left' : 'right';
-            self.currentIndex = index;
+        $scope.setCurrentSlideIndex = function (index) {
+            $scope.direction = (index > $scope.currentIndex) ? 'left' : 'right';
+            $scope.currentIndex = index;
         };
 
-        self.isCurrentSlideIndex = function (index) {
-            return self.currentIndex === index;
+        $scope.isCurrentSlideIndex = function (index) {
+            return $scope.currentIndex === index;
         };
 
-        self.prevSlide = function () {
-            self.direction = 'left';
-            self.currentIndex = (self.currentIndex < self.slides.length - 1) ? ++self.currentIndex : 0;
+        $scope.prevSlide = function () {
+            $scope.direction = 'left';
+            $scope.currentIndex = ($scope.currentIndex < $scope.slides.length - 1) ? ++$scope.currentIndex : 0;
         };
 
-        self.nextSlide = function () {
-            self.direction = 'right';
-            self.currentIndex = (self.currentIndex > 0) ? --self.currentIndex : self.slides.length - 1;
+        $scope.nextSlide = function () {
+            $scope.direction = 'right';
+            $scope.currentIndex = ($scope.currentIndex > 0) ? --$scope.currentIndex : $scope.slides.length - 1;
         };
       });
-    }]
+    }])
   })
   .animation('.slide-animation', function () {
           return {
