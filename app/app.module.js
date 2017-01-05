@@ -6,5 +6,6 @@ angular.module('youdotwoApp', [
     'ngAnimate',
     'ngTouch',
     'youdotwoHeader',
-    'youdotwoCarousel'
+    'youdotwoCarousel',
+    'youdotwoLogin'
 ]);
