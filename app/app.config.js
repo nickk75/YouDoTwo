@@ -13,6 +13,12 @@ angular.
         when('/slider', {
         template: '<youdotwo-carousel></youdotwo-carousel>'
       }).
+        when('/login', {
+        template: '<youdotwo-login></youdotwo-login>'
+      }).
+        when('/signup', {
+        template: '<youdotwo-signup></youdotwo-signup>'
+      }).
         otherwise('/slider');
     }
   ]);

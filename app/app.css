@@ -1,3 +1,16 @@
+/*
+HTML BODY STYLE
+*/
+
+body {
+    overflow: hidden;
+    background-color: #000000;
+}
+
+/*
+MAIN NAVBAR
+*/
+
 .navbar-nav.navbar-right .btn { position: relative; z-index: 2; padding: 4px 20px; margin: 10px auto; transition: transform 0.3s; }
 
 .btn.btn-circle { border-radius: 50px; }
@@ -9,25 +22,26 @@
     color: rgb(255, 255, 255);
 }
 
-body {
-    overflow: hidden;
-    background-color: #000000;
-}
+/*
+CAROUSEL SLIDER
+*/
 
 .slider {
-    width: 800px;
-    height: 400px;
+    width: 100%;
+    height: 600px;
     overflow: hidden;
     position: relative;
     background: #e6e6e6;
-    border: 20px solid #FFF;
-    margin-top: 20px;
+    border: 5px solid #FFF;
+    margin-top: 0px;
 }
 
 .slide {
     position: absolute;
-    top: 0;
-    left: 0;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%)
 }
 
 .arrow {
@@ -46,7 +60,7 @@ body {
 .arrow.prev {
     opacity: 0.2;
     left: 20px;
-    background-image: url(/youdotwo-carousel/images/pad dle_prev_999.png);
+    background-image: url(/youdotwo-carousel/images/paddle_prev_999.png);
     transition: 0.2s linear all;
 }
 
@@ -67,22 +81,9 @@ body {
     background-image: url(/youdotwo-carousel/images/paddle_next_fff.png);
 }
 
-
-
-*---------------------------------------------------------
-NAV
----------------------------------------------------------*/
-
-.nav {
-    text-align: center;
-    display: block;
-    position: absolute;
-    z-index: 1002;
-    left: 0;
-    bottom: -4px;
-    right: 0;
-    height: 48px;
-}
+/*
+CAROUSEL NAVBAR
+*/
 
 .nonDraggableImage{
     -webkit-user-drag: none;
@@ -139,3 +140,32 @@ NAV
     background-color: transparent;
 }
 
+.logoimg {
+    padding-left: 32px;
+    padding-bottom: 5px;
+    width: 210px;
+    height: 50px;
+}
+
+/*
+LOGIN PAGE
+*/
+
+.spacing {
+    padding-top:7px;
+    padding-bottom:7px;
+}
+.middlePage {
+    width: 680px;
+    height: 500px;
+    position: absolute;
+    top:0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
+.logo {
+    color:#CCC;
+}

@@ -7,5 +7,6 @@ angular.module('youdotwoApp', [
     'ngTouch',
     'youdotwoHeader',
     'youdotwoCarousel',
-    'youdotwoLogin'
+    'youdotwoLogin',
+    'youdotwoSignup'
 ]);
