@@ -2,5 +2,5 @@
 
 // Define the `phoneList` module
 angular.module('youdotwoLogin', [
-    'ngRoute'
+    'ui.router'
     ]);

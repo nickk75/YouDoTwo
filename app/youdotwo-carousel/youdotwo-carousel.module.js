@@ -2,7 +2,7 @@
 
 // Define the `phonecatApp` module
 angular.module('youdotwoCarousel', [
-    'ngRoute',
+    'ui.router',
     'ngAnimate',
     'ngTouch'
 ]);

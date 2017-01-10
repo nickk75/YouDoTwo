@@ -2,7 +2,7 @@
 
 // Define the `phonecatApp` module
 angular.module('youdotwoApp', [
-    'ngRoute',
+    'ui.router',
     'ngAnimate',
     'ngTouch',
     'youdotwoHeader',

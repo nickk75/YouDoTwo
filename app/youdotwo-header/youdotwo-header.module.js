@@ -2,5 +2,5 @@
 
 // Define the `phoneList` module
 angular.module('youdotwoHeader', [
-    'ngRoute'
+    'ui.router'
     ]);

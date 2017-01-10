@@ -1,9 +1,9 @@
 'use strict';
 
 // Register `phoneList` component, along with its associated controller and template
-angular.
-  module('youdotwoHeader').
-  component('youdotwoHeader', {
+angular
+  .module('youdotwoHeader')
+  .component('youdotwoHeader', {
     templateUrl: 'youdotwo-header/youdotwo-header.template.html',
     controller:['$http', function YoudotwoHeaderController($http) {
         var self = this;
