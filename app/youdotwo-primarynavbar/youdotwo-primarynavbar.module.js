@@ -1,6 +1,6 @@
 'use strict';
 
 // Define the `phoneList` module
-angular.module('youdotwoHeader', [
+angular.module('youdotwoPrimaryNavbar', [
     'ui.router'
     ]);

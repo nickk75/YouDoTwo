@@ -6,6 +6,7 @@
 
     <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css" />
     <link rel="stylesheet" href="app.css" />
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
 
 
     <script src="/bower_components/jquery/dist/jquery.min.js"></script>
@@ -19,19 +20,23 @@
     <script src="app.module.js"></script>
     <script src="app.config.js"></script>
 
-    <script src="youdotwo-header/youdotwo-header.module.js"></script>
-    <script src="youdotwo-header/youdotwo-header.component.js"></script>
+    <script src="youdotwo-primarynavbar/youdotwo-primarynavbar.module.js"></script>
+    <script src="youdotwo-primarynavbar/youdotwo-primarynavbar.component.js"></script>
     <script src="youdotwo-carousel/youdotwo-carousel.module.js"></script>
     <script src="youdotwo-carousel/youdotwo-carousel.component.js"></script>
     <script src="youdotwo-login/youdotwo-login.module.js"></script>
     <script src="youdotwo-login/youdotwo-login.component.js"></script>
     <script src="youdotwo-signup/youdotwo-signup.module.js"></script>
     <script src="youdotwo-signup/youdotwo-signup.component.js"></script>
+    <script src="youdotwo-footer/youdotwo-footer.module.js"></script>
+    <script src="youdotwo-footer/youdotwo-footer.component.js"></script>
 
   </head>
   <body>
     <div class="container">
         <div ui-view></div>
+        <div ui-view="carousel"></div>
+        <div ui-view="footer"></div>
         <!-- <footer ng-include="''"></footer> -->
     </div>
 

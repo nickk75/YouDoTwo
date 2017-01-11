@@ -5,7 +5,8 @@ angular.module('youdotwoApp', [
     'ui.router',
     'ngAnimate',
     'ngTouch',
-    'youdotwoHeader',
+    'youdotwoPrimaryNavbar',
+    'youdotwoFooter',
     'youdotwoCarousel',
     'youdotwoLogin',
     'youdotwoSignup'

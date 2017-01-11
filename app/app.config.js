@@ -9,7 +9,15 @@ angular
       $stateProvider
       .state('home', {
         url: '/',
-        component: 'youdotwoHeader'
+        views: {
+
+            '': {component: 'youdotwoPrimaryNavbar'},
+
+            'carousel': {component: 'youdotwoCarousel'},
+
+            'footer': {component: 'youdotwoFooter'}
+
+        }
       })
     }])
 
